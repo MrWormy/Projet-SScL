@@ -118,8 +118,6 @@ $( function ( ) {
         that: this,
         win: win
       }, this.resize );
-      // var that = this 
-      // window.onresize = function(){that.resize(that)};
       this.model.on( 'change', this.resizeCanvas, this );
       this.model.trigger( 'change' );
     },
@@ -180,7 +178,7 @@ $( function ( ) {
     },
 
     canvasClicked: function ( ) {
-      
+
     }
   } );
 
